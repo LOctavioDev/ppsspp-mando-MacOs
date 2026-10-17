@@ -1,4 +1,4 @@
-# ppsspp-mando-mac
+# ppsspp-mando-MacOs
 
 Puente para usar un **mando genérico USB** en **PPSSPP** en macOS cuando el emulador no lo detecta.
 
@@ -52,8 +52,8 @@ Para cambiarla, edita la tabla `button_key` de `puente.c` y vuelve a compilar.
 Requisitos: macOS, [PPSSPP](https://www.ppsspp.org/) en `/Applications/PPSSPPSDL.app` y las herramientas de línea de comandos (`xcode-select --install`).
 
 ```sh
-git clone git@github.com:LOctavioDev/ppsspp-mando-mac.git
-cd ppsspp-mando-mac
+git clone git@github.com:LOctavioDev/ppsspp-mando-MacOs.git
+cd ppsspp-mando-MacOs
 ./compilar.sh
 ```
 
