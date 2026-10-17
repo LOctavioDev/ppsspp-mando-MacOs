@@ -65,6 +65,18 @@ Para jugar:
 
 **La primera vez** macOS pide permiso de **Accesibilidad** para poder enviar teclas: Ajustes del Sistema → Privacidad y seguridad → Accesibilidad → activa **Terminal**. Luego vuelve a abrir el lanzador.
 
+### Como app (Spotlight, Dock, Launchpad)
+
+Si abres el `.command` desde Spotlight, macOS dice que *Siri no tiene permiso para abrir documentos en Terminal*. Para evitarlo, crea una app:
+
+```sh
+./crear-app.sh
+```
+
+Esto deja **`PPSSPP con mando.app`** en `~/Applications`, con el ícono de PPSSPP. Ábrela desde Spotlight, el Dock o Launchpad. No abre Terminal. La primera vez, el permiso de Accesibilidad hay que dárselo a **PPSSPP con mando** (en lugar de a Terminal).
+
+Si mueves la carpeta del repositorio, vuelve a ejecutar `./crear-app.sh`.
+
 ### Avisos
 
 | Evento | Sonido | Notificación |
@@ -81,6 +93,7 @@ Cada evento queda en `registro.log` con fecha y hora. Si el juego deja de respon
 | `puente.c` | Código del puente |
 | `compilar.sh` | Compila el puente. Si el compilador no coincide con el SDK más nuevo (pasa tras actualizar macOS), prueba con SDK anteriores |
 | `PPSSPP-con-mando.command` | Lanzador de doble clic. Compila el puente si hace falta |
+| `crear-app.sh` | Crea `PPSSPP con mando.app` en `~/Applications` para abrirlo desde Spotlight, el Dock o Launchpad |
 
 ## Otro mando
 
